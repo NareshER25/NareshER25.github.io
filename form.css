@@ -1,0 +1,215 @@
+html,body{
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg,rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.container{
+    background:#22C1C3;
+    box-shadow: 5px 5px 8px black;
+    max-width: 600px;
+    width: 75%;
+    margin: 45px auto;
+    padding: 50px 50px;
+}
+.blink{
+    animation-name: blinker;
+    animation-duration: 0.6s;
+    animation-iteration-count:infinite;
+    color: red;
+}
+@keyframes blinker {
+    from {
+        opacity: 1.0;
+    }
+    to {
+        opacity: 0.5;
+    }
+}
+.inpu_error{
+    animation: inputerror;
+    animation-duration: 0.6s;
+    animation-iteration-count:infinite;
+}
+@keyframes inputerror {
+    from {
+        opacity: 1.0;
+    }
+    to {
+        opacity: 0.5;
+    }
+}
+.up
+{
+    position: relative;
+    animation-duration: 3s;
+    animation-name: upside;
+}
+.dw
+{
+    position: relative;
+    animation-duration: 3s;
+    animation-name: downside;
+}
+.la
+{
+    position: relative;
+    animation-duration: 2s;
+    animation-name: leftside;
+}
+@keyframes leftside
+{
+    0%   {
+        left:-1500px;
+        top:0px;
+    }
+    100% {
+        left:0px;
+        top:0px;
+    }
+}
+.laa
+{
+    position: relative;
+    animation-duration: 1s;
+    animation-name: leftside;
+}
+@keyframes leftside
+{
+    0%   {
+        left:-1000px;
+        top:0px;
+    }
+    100% {
+        left:0px;
+        top:0px;
+    }
+}
+.ra
+{
+    position: relative;
+    animation-duration:2s;
+    animation-name: rightside;
+}
+@keyframes rightside
+{
+    0%   {
+        left:1500px;
+        top:0px;
+    }
+    100% {
+        left:0px;
+        top:0px;
+    }
+}
+.raa
+{
+    position: relative;
+    animation-duration: 1s;
+    animation-name: rightside;
+}
+@keyframes rightside
+{
+    0%   {
+        left:1000px;
+        top:0px;
+    }
+    100% {
+        left:0px;
+        top:0px;
+    }
+}
+@keyframes upside
+{
+    0%   {
+        left:0px;
+        top:-200px;
+    }
+    100% {
+        left:0px;
+        top:0px;
+    }
+}
+@keyframes downside
+{
+    0%   {
+        left:0px;
+        top:200px;
+    }
+    100% {
+        left:0px;
+        top:0px;
+    }
+}
+.col{
+    background: linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+}
+.inpu::placeholder{
+    color:white;
+}
+.inpu{
+    outline: none;
+}
+@media (min-width: 0px) and (max-width: 386px){
+    .container{
+        width: 85%;
+        margin: auto;
+        height: auto;
+    }
+    .mar{
+        margin: 0px 0px 20px 0px;
+    }
+    .wid{
+        width: 100%;
+    }
+}
+@media (min-width: 386px) and (max-width: 576px) {
+    .container{
+        width: 90%;
+        margin: 10px auto;
+        margin-top: 20px;
+        padding: 20px;
+        height: auto;
+    }
+    .mar{
+        margin: 0px 0px 20px 0px;
+    }
+    .wid{
+        width: 100%;
+    }
+}
+@media (min-width: 576px) and (max-width: 686px){
+    .container{
+        width: 85%;
+        margin: auto;
+        margin-top: 20px;
+        height: 200%;
+    }
+    .mar{
+        margin: 0px 0px 20px 0px;
+    }
+    .wid{
+        width: 100%;
+    }
+}
+@media (min-width: 686px) and (max-width: 990px){
+    .container{
+        width: 85%;
+        margin: auto;
+        margin-top: 20px;
+        height: auto;
+    }
+    .mar{
+        margin: 0px 0px 20px 0px;
+    }
+    .wid{
+        width: 100%;
+    }
+}
+.error {
+    display: none;
+    color: red;
+}
